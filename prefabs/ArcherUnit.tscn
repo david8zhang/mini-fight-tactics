@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk7ansicwf8we"]
+
+[ext_resource type="Script" path="res://scripts/units/ArcherUnit.gd" id="1_x6dog"]
+[ext_resource type="SpriteFrames" uid="uid://dv1g8rdy7ktbb" path="res://animations/ArcherUnit.tres" id="2_chax8"]
+
+[node name="ArcherUnit" type="Node2D"]
+script = ExtResource("1_x6dog")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_chax8")
+animation = &"archer-idle"
+autoplay = "archer-idle"
+frame_progress = 0.334164
+offset = Vector2(2.08165e-12, -16)
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = -16.0
+offset_right = 8.0
+grow_horizontal = 2
+grow_vertical = 2
